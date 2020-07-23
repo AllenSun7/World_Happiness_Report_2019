@@ -1,0 +1,809 @@
+<?xml version='1.0' encoding='utf-8' ?>
+
+<!-- build 20202.20.0415.1946                               -->
+<workbook source-build='2020.2.0 (20202.20.0415.1946)' source-platform='mac' version='18.1' xmlns:user='http://www.tableausoftware.com/xml/user'>
+  <document-format-change-manifest>
+    <MapboxVectorStylesAndLayers />
+    <_.fcp.MarkAnimation.true...MarkAnimation />
+    <_.fcp.ObjectModelEncapsulateLegacy.true...ObjectModelEncapsulateLegacy />
+    <_.fcp.ObjectModelTableType.true...ObjectModelTableType />
+    <_.fcp.SchemaViewerObjectModel.true...SchemaViewerObjectModel />
+    <SheetIdentifierTracking />
+    <WindowsPersistSimpleIdentifiers />
+  </document-format-change-manifest>
+  <preferences>
+    <preference name='ui.encoding.shelf.height' value='24' />
+    <preference name='ui.shelf.height' value='26' />
+  </preferences>
+  <datasources>
+    <datasource caption='world-happiness-report-2019' inline='true' name='federated.0rncntt1fcs6fc10tm1vl01zija0' version='18.1'>
+      <connection class='federated'>
+        <named-connections>
+          <named-connection caption='world-happiness-report-2019' name='textscan.0g0idlb0zlgcx81bhepbb0indy9s'>
+            <connection class='textscan' directory='/Users/allen/Desktop/Kaggle/World_Happiness_Report_2019/data' filename='world-happiness-report-2019.csv' password='' server='' />
+          </named-connection>
+        </named-connections>
+        <_.fcp.ObjectModelEncapsulateLegacy.false...relation connection='textscan.0g0idlb0zlgcx81bhepbb0indy9s' name='world-happiness-report-2019.csv' table='[world-happiness-report-2019#csv]' type='table'>
+          <columns character-set='UTF-8' header='yes' locale='en_US' separator=','>
+            <column datatype='string' name='Country (region)' ordinal='0' />
+            <column datatype='integer' name='Ladder' ordinal='1' />
+            <column datatype='integer' name='SD of Ladder' ordinal='2' />
+            <column datatype='integer' name='Positive affect' ordinal='3' />
+            <column datatype='integer' name='Negative affect' ordinal='4' />
+            <column datatype='integer' name='Social support' ordinal='5' />
+            <column datatype='integer' name='Freedom' ordinal='6' />
+            <column datatype='integer' name='Corruption' ordinal='7' />
+            <column datatype='integer' name='Generosity' ordinal='8' />
+            <column datatype='integer' name='Log of GDP_per capita' ordinal='9' />
+            <column datatype='integer' name='Healthy life_expectancy' ordinal='10' />
+          </columns>
+        </_.fcp.ObjectModelEncapsulateLegacy.false...relation>
+        <_.fcp.ObjectModelEncapsulateLegacy.true...relation connection='textscan.0g0idlb0zlgcx81bhepbb0indy9s' name='world-happiness-report-2019.csv' table='[world-happiness-report-2019#csv]' type='table'>
+          <columns character-set='UTF-8' header='yes' locale='en_US' separator=','>
+            <column datatype='string' name='Country (region)' ordinal='0' />
+            <column datatype='integer' name='Ladder' ordinal='1' />
+            <column datatype='integer' name='SD of Ladder' ordinal='2' />
+            <column datatype='integer' name='Positive affect' ordinal='3' />
+            <column datatype='integer' name='Negative affect' ordinal='4' />
+            <column datatype='integer' name='Social support' ordinal='5' />
+            <column datatype='integer' name='Freedom' ordinal='6' />
+            <column datatype='integer' name='Corruption' ordinal='7' />
+            <column datatype='integer' name='Generosity' ordinal='8' />
+            <column datatype='integer' name='Log of GDP_per capita' ordinal='9' />
+            <column datatype='integer' name='Healthy life_expectancy' ordinal='10' />
+          </columns>
+        </_.fcp.ObjectModelEncapsulateLegacy.true...relation>
+        <metadata-records>
+          <metadata-record class='capability'>
+            <remote-name />
+            <remote-type>0</remote-type>
+            <parent-name>[world-happiness-report-2019.csv]</parent-name>
+            <remote-alias />
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='character-set'>&quot;UTF-8&quot;</attribute>
+              <attribute datatype='string' name='collation'>&quot;en_US&quot;</attribute>
+              <attribute datatype='string' name='field-delimiter'>&quot;,&quot;</attribute>
+              <attribute datatype='string' name='header-row'>&quot;true&quot;</attribute>
+              <attribute datatype='string' name='locale'>&quot;en_US&quot;</attribute>
+              <attribute datatype='string' name='single-char'>&quot;&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Country (region)</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[Country (region)]</local-name>
+            <parent-name>[world-happiness-report-2019.csv]</parent-name>
+            <remote-alias>Country (region)</remote-alias>
+            <ordinal>0</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[world-happiness-report-2019.csv_BDF747ABCCD8464581F2798D024929AF]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Ladder</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Ladder]</local-name>
+            <parent-name>[world-happiness-report-2019.csv]</parent-name>
+            <remote-alias>Ladder</remote-alias>
+            <ordinal>1</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[world-happiness-report-2019.csv_BDF747ABCCD8464581F2798D024929AF]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>SD of Ladder</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[SD of Ladder]</local-name>
+            <parent-name>[world-happiness-report-2019.csv]</parent-name>
+            <remote-alias>SD of Ladder</remote-alias>
+            <ordinal>2</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[world-happiness-report-2019.csv_BDF747ABCCD8464581F2798D024929AF]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Positive affect</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Positive affect]</local-name>
+            <parent-name>[world-happiness-report-2019.csv]</parent-name>
+            <remote-alias>Positive affect</remote-alias>
+            <ordinal>3</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[world-happiness-report-2019.csv_BDF747ABCCD8464581F2798D024929AF]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Negative affect</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Negative affect]</local-name>
+            <parent-name>[world-happiness-report-2019.csv]</parent-name>
+            <remote-alias>Negative affect</remote-alias>
+            <ordinal>4</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[world-happiness-report-2019.csv_BDF747ABCCD8464581F2798D024929AF]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Social support</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Social support]</local-name>
+            <parent-name>[world-happiness-report-2019.csv]</parent-name>
+            <remote-alias>Social support</remote-alias>
+            <ordinal>5</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[world-happiness-report-2019.csv_BDF747ABCCD8464581F2798D024929AF]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Freedom</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Freedom]</local-name>
+            <parent-name>[world-happiness-report-2019.csv]</parent-name>
+            <remote-alias>Freedom</remote-alias>
+            <ordinal>6</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[world-happiness-report-2019.csv_BDF747ABCCD8464581F2798D024929AF]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Corruption</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Corruption]</local-name>
+            <parent-name>[world-happiness-report-2019.csv]</parent-name>
+            <remote-alias>Corruption</remote-alias>
+            <ordinal>7</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[world-happiness-report-2019.csv_BDF747ABCCD8464581F2798D024929AF]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Generosity</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Generosity]</local-name>
+            <parent-name>[world-happiness-report-2019.csv]</parent-name>
+            <remote-alias>Generosity</remote-alias>
+            <ordinal>8</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[world-happiness-report-2019.csv_BDF747ABCCD8464581F2798D024929AF]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Log of GDP_per capita</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Log of GDP_per capita]</local-name>
+            <parent-name>[world-happiness-report-2019.csv]</parent-name>
+            <remote-alias>Log of GDP_per capita</remote-alias>
+            <ordinal>9</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[world-happiness-report-2019.csv_BDF747ABCCD8464581F2798D024929AF]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Healthy life_expectancy</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Healthy life_expectancy]</local-name>
+            <parent-name>[world-happiness-report-2019.csv]</parent-name>
+            <remote-alias>Healthy life_expectancy</remote-alias>
+            <ordinal>10</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[world-happiness-report-2019.csv_BDF747ABCCD8464581F2798D024929AF]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+        </metadata-records>
+      </connection>
+      <aliases enabled='yes' />
+      <column datatype='integer' name='[Calculation1]' role='measure' type='quantitative'>
+        <calculation class='tableau' formula='RUNNING_SUM(COUNT([__tableau_internal_object_id__].[world-happiness-report-2019.csv_BDF747ABCCD8464581F2798D024929AF]))'>
+          <table-calc ordering-field='[federated.0rncntt1fcs6fc10tm1vl01zija0].[Country (region)]' ordering-type='Field' />
+        </calculation>
+      </column>
+      <column datatype='string' name='[Country (region)]' role='dimension' semantic-role='[Country].[ISO3166_2]' type='nominal' />
+      <column caption='Healthy life expectancy' datatype='integer' name='[Healthy life_expectancy]' role='measure' type='quantitative' />
+      <column datatype='integer' name='[Ladder]' role='measure' type='quantitative' />
+      <column caption='Log of GDP per capita' datatype='integer' name='[Log of GDP_per capita]' role='measure' type='quantitative' />
+      <_.fcp.ObjectModelTableType.true...column caption='world-happiness-report-2019.csv' datatype='table' name='[__tableau_internal_object_id__].[world-happiness-report-2019.csv_BDF747ABCCD8464581F2798D024929AF]' role='measure' type='quantitative' />
+      <column-instance column='[Ladder]' derivation='Sum' name='[sum:Ladder:ok]' pivot='key' type='ordinal' />
+      <layout _.fcp.SchemaViewerObjectModel.false...dim-percentage='0.5' _.fcp.SchemaViewerObjectModel.false...measure-percentage='0.4' dim-ordering='alphabetic' measure-ordering='alphabetic' rowDisplayCount='156' show-structure='true' />
+      <style>
+        <style-rule element='mark'>
+          <encoding attr='color' field='[sum:Ladder:ok]' palette='blue_10_0' type='palette'>
+            <map to='#2a5783'>
+              <bucket>155</bucket>
+            </map>
+            <map to='#2a5783'>
+              <bucket>156</bucket>
+            </map>
+            <map to='#2b5884'>
+              <bucket>154</bucket>
+            </map>
+            <map to='#2c5985'>
+              <bucket>153</bucket>
+            </map>
+            <map to='#2d5a86'>
+              <bucket>152</bucket>
+            </map>
+            <map to='#2e5b87'>
+              <bucket>151</bucket>
+            </map>
+            <map to='#2f5c88'>
+              <bucket>150</bucket>
+            </map>
+            <map to='#2f5c89'>
+              <bucket>149</bucket>
+            </map>
+            <map to='#305d8a'>
+              <bucket>148</bucket>
+            </map>
+            <map to='#315e8b'>
+              <bucket>147</bucket>
+            </map>
+            <map to='#325f8c'>
+              <bucket>146</bucket>
+            </map>
+            <map to='#33608c'>
+              <bucket>145</bucket>
+            </map>
+            <map to='#34618d'>
+              <bucket>144</bucket>
+            </map>
+            <map to='#34618e'>
+              <bucket>143</bucket>
+            </map>
+            <map to='#35628f'>
+              <bucket>142</bucket>
+            </map>
+            <map to='#366390'>
+              <bucket>141</bucket>
+            </map>
+            <map to='#376491'>
+              <bucket>140</bucket>
+            </map>
+            <map to='#386592'>
+              <bucket>139</bucket>
+            </map>
+            <map to='#386593'>
+              <bucket>138</bucket>
+            </map>
+            <map to='#396693'>
+              <bucket>137</bucket>
+            </map>
+            <map to='#3a6794'>
+              <bucket>136</bucket>
+            </map>
+            <map to='#3a6895'>
+              <bucket>135</bucket>
+            </map>
+            <map to='#3b6996'>
+              <bucket>134</bucket>
+            </map>
+            <map to='#3c6997'>
+              <bucket>133</bucket>
+            </map>
+            <map to='#3d6a98'>
+              <bucket>132</bucket>
+            </map>
+            <map to='#3d6b98'>
+              <bucket>131</bucket>
+            </map>
+            <map to='#3e6c99'>
+              <bucket>130</bucket>
+            </map>
+            <map to='#3f6c9a'>
+              <bucket>129</bucket>
+            </map>
+            <map to='#3f6d9b'>
+              <bucket>128</bucket>
+            </map>
+            <map to='#406e9c'>
+              <bucket>127</bucket>
+            </map>
+            <map to='#416f9d'>
+              <bucket>126</bucket>
+            </map>
+            <map to='#42709e'>
+              <bucket>124</bucket>
+            </map>
+            <map to='#42709e'>
+              <bucket>125</bucket>
+            </map>
+            <map to='#43719f'>
+              <bucket>123</bucket>
+            </map>
+            <map to='#4372a0'>
+              <bucket>122</bucket>
+            </map>
+            <map to='#4473a1'>
+              <bucket>121</bucket>
+            </map>
+            <map to='#4574a2'>
+              <bucket>120</bucket>
+            </map>
+            <map to='#4575a3'>
+              <bucket>119</bucket>
+            </map>
+            <map to='#4675a3'>
+              <bucket>118</bucket>
+            </map>
+            <map to='#4776a4'>
+              <bucket>117</bucket>
+            </map>
+            <map to='#4777a5'>
+              <bucket>116</bucket>
+            </map>
+            <map to='#4878a6'>
+              <bucket>115</bucket>
+            </map>
+            <map to='#4979a7'>
+              <bucket>114</bucket>
+            </map>
+            <map to='#497aa8'>
+              <bucket>113</bucket>
+            </map>
+            <map to='#4a7aa8'>
+              <bucket>112</bucket>
+            </map>
+            <map to='#4b7ba9'>
+              <bucket>111</bucket>
+            </map>
+            <map to='#4b7caa'>
+              <bucket>110</bucket>
+            </map>
+            <map to='#4c7dab'>
+              <bucket>109</bucket>
+            </map>
+            <map to='#4d7eac'>
+              <bucket>108</bucket>
+            </map>
+            <map to='#4e7fac'>
+              <bucket>107</bucket>
+            </map>
+            <map to='#4e7fad'>
+              <bucket>106</bucket>
+            </map>
+            <map to='#4f80ae'>
+              <bucket>105</bucket>
+            </map>
+            <map to='#5081ae'>
+              <bucket>104</bucket>
+            </map>
+            <map to='#5182af'>
+              <bucket>103</bucket>
+            </map>
+            <map to='#5283b0'>
+              <bucket>102</bucket>
+            </map>
+            <map to='#5384b1'>
+              <bucket>100</bucket>
+            </map>
+            <map to='#5384b1'>
+              <bucket>101</bucket>
+            </map>
+            <map to='#5485b2'>
+              <bucket>99</bucket>
+            </map>
+            <map to='#5586b3'>
+              <bucket>98</bucket>
+            </map>
+            <map to='#5687b3'>
+              <bucket>97</bucket>
+            </map>
+            <map to='#5788b4'>
+              <bucket>96</bucket>
+            </map>
+            <map to='#5889b5'>
+              <bucket>95</bucket>
+            </map>
+            <map to='#598ab6'>
+              <bucket>93</bucket>
+            </map>
+            <map to='#598ab6'>
+              <bucket>94</bucket>
+            </map>
+            <map to='#5a8bb7'>
+              <bucket>92</bucket>
+            </map>
+            <map to='#5b8cb8'>
+              <bucket>91</bucket>
+            </map>
+            <map to='#5c8db8'>
+              <bucket>90</bucket>
+            </map>
+            <map to='#5d8eb9'>
+              <bucket>89</bucket>
+            </map>
+            <map to='#5e8fba'>
+              <bucket>88</bucket>
+            </map>
+            <map to='#5f90ba'>
+              <bucket>87</bucket>
+            </map>
+            <map to='#6091bb'>
+              <bucket>86</bucket>
+            </map>
+            <map to='#6192bc'>
+              <bucket>85</bucket>
+            </map>
+            <map to='#6293bd'>
+              <bucket>83</bucket>
+            </map>
+            <map to='#6293bd'>
+              <bucket>84</bucket>
+            </map>
+            <map to='#6394be'>
+              <bucket>82</bucket>
+            </map>
+            <map to='#6495bf'>
+              <bucket>81</bucket>
+            </map>
+            <map to='#6596bf'>
+              <bucket>80</bucket>
+            </map>
+            <map to='#6697c0'>
+              <bucket>79</bucket>
+            </map>
+            <map to='#6798c1'>
+              <bucket>78</bucket>
+            </map>
+            <map to='#6899c2'>
+              <bucket>77</bucket>
+            </map>
+            <map to='#699ac2'>
+              <bucket>76</bucket>
+            </map>
+            <map to='#6a9bc3'>
+              <bucket>75</bucket>
+            </map>
+            <map to='#6b9cc4'>
+              <bucket>73</bucket>
+            </map>
+            <map to='#6b9cc4'>
+              <bucket>74</bucket>
+            </map>
+            <map to='#6c9dc5'>
+              <bucket>72</bucket>
+            </map>
+            <map to='#6d9ec6'>
+              <bucket>71</bucket>
+            </map>
+            <map to='#6e9fc7'>
+              <bucket>70</bucket>
+            </map>
+            <map to='#6fa0c7'>
+              <bucket>69</bucket>
+            </map>
+            <map to='#70a1c8'>
+              <bucket>68</bucket>
+            </map>
+            <map to='#71a2c9'>
+              <bucket>67</bucket>
+            </map>
+            <map to='#72a3c9'>
+              <bucket>66</bucket>
+            </map>
+            <map to='#73a4ca'>
+              <bucket>65</bucket>
+            </map>
+            <map to='#74a5cb'>
+              <bucket>64</bucket>
+            </map>
+            <map to='#75a6cc'>
+              <bucket>62</bucket>
+            </map>
+            <map to='#75a6cc'>
+              <bucket>63</bucket>
+            </map>
+            <map to='#76a7cd'>
+              <bucket>61</bucket>
+            </map>
+            <map to='#77a8ce'>
+              <bucket>60</bucket>
+            </map>
+            <map to='#78a9ce'>
+              <bucket>59</bucket>
+            </map>
+            <map to='#79aacf'>
+              <bucket>58</bucket>
+            </map>
+            <map to='#7aabd0'>
+              <bucket>57</bucket>
+            </map>
+            <map to='#7babd0'>
+              <bucket>56</bucket>
+            </map>
+            <map to='#7cacd1'>
+              <bucket>55</bucket>
+            </map>
+            <map to='#7dadd2'>
+              <bucket>54</bucket>
+            </map>
+            <map to='#7eaed3'>
+              <bucket>53</bucket>
+            </map>
+            <map to='#7eafd3'>
+              <bucket>52</bucket>
+            </map>
+            <map to='#7fb0d4'>
+              <bucket>51</bucket>
+            </map>
+            <map to='#80b0d5'>
+              <bucket>50</bucket>
+            </map>
+            <map to='#81b1d5'>
+              <bucket>49</bucket>
+            </map>
+            <map to='#82b2d6'>
+              <bucket>48</bucket>
+            </map>
+            <map to='#83b3d7'>
+              <bucket>47</bucket>
+            </map>
+            <map to='#84b4d7'>
+              <bucket>46</bucket>
+            </map>
+            <map to='#85b5d8'>
+              <bucket>45</bucket>
+            </map>
+            <map to='#86b6d9'>
+              <bucket>44</bucket>
+            </map>
+            <map to='#87b7d9'>
+              <bucket>43</bucket>
+            </map>
+            <map to='#89b8da'>
+              <bucket>42</bucket>
+            </map>
+            <map to='#8ab9db'>
+              <bucket>41</bucket>
+            </map>
+            <map to='#8bbadb'>
+              <bucket>40</bucket>
+            </map>
+            <map to='#8cbbdc'>
+              <bucket>39</bucket>
+            </map>
+            <map to='#8dbcdd'>
+              <bucket>38</bucket>
+            </map>
+            <map to='#8ebddd'>
+              <bucket>37</bucket>
+            </map>
+            <map to='#8fbede'>
+              <bucket>36</bucket>
+            </map>
+            <map to='#90bfdf'>
+              <bucket>35</bucket>
+            </map>
+            <map to='#91c0df'>
+              <bucket>34</bucket>
+            </map>
+            <map to='#92c1e0'>
+              <bucket>33</bucket>
+            </map>
+            <map to='#94c2e1'>
+              <bucket>32</bucket>
+            </map>
+            <map to='#95c2e1'>
+              <bucket>31</bucket>
+            </map>
+            <map to='#96c3e2'>
+              <bucket>30</bucket>
+            </map>
+            <map to='#97c4e2'>
+              <bucket>29</bucket>
+            </map>
+            <map to='#98c5e3'>
+              <bucket>28</bucket>
+            </map>
+            <map to='#99c6e3'>
+              <bucket>27</bucket>
+            </map>
+            <map to='#9ac7e4'>
+              <bucket>26</bucket>
+            </map>
+            <map to='#9cc8e5'>
+              <bucket>25</bucket>
+            </map>
+            <map to='#9dc9e5'>
+              <bucket>24</bucket>
+            </map>
+            <map to='#9ecae6'>
+              <bucket>23</bucket>
+            </map>
+            <map to='#9fcbe6'>
+              <bucket>22</bucket>
+            </map>
+            <map to='#a0cbe7'>
+              <bucket>21</bucket>
+            </map>
+            <map to='#a1cce7'>
+              <bucket>20</bucket>
+            </map>
+            <map to='#a3cde8'>
+              <bucket>19</bucket>
+            </map>
+            <map to='#a4cee9'>
+              <bucket>18</bucket>
+            </map>
+            <map to='#a5cfe9'>
+              <bucket>17</bucket>
+            </map>
+            <map to='#a6d0ea'>
+              <bucket>16</bucket>
+            </map>
+            <map to='#a7d1ea'>
+              <bucket>15</bucket>
+            </map>
+            <map to='#a9d2eb'>
+              <bucket>14</bucket>
+            </map>
+            <map to='#aad2eb'>
+              <bucket>13</bucket>
+            </map>
+            <map to='#abd3ec'>
+              <bucket>12</bucket>
+            </map>
+            <map to='#acd4ec'>
+              <bucket>11</bucket>
+            </map>
+            <map to='#add5ec'>
+              <bucket>10</bucket>
+            </map>
+            <map to='#afd6ed'>
+              <bucket>9</bucket>
+            </map>
+            <map to='#b0d7ed'>
+              <bucket>8</bucket>
+            </map>
+            <map to='#b1d7ee'>
+              <bucket>7</bucket>
+            </map>
+            <map to='#b2d8ee'>
+              <bucket>6</bucket>
+            </map>
+            <map to='#b4d9ef'>
+              <bucket>5</bucket>
+            </map>
+            <map to='#b5daef'>
+              <bucket>4</bucket>
+            </map>
+            <map to='#b6dbf0'>
+              <bucket>3</bucket>
+            </map>
+            <map to='#b7dcf0'>
+              <bucket>2</bucket>
+            </map>
+            <map to='#b9ddf1'>
+              <bucket>1</bucket>
+            </map>
+          </encoding>
+        </style-rule>
+      </style>
+      <semantic-values>
+        <semantic-value key='[Country].[Name]' value='&quot;United States&quot;' />
+      </semantic-values>
+      <_.fcp.ObjectModelEncapsulateLegacy.true...object-graph>
+        <objects>
+          <object caption='world-happiness-report-2019.csv' id='world-happiness-report-2019.csv_BDF747ABCCD8464581F2798D024929AF'>
+            <properties context=''>
+              <relation connection='textscan.0g0idlb0zlgcx81bhepbb0indy9s' name='world-happiness-report-2019.csv' table='[world-happiness-report-2019#csv]' type='table'>
+                <columns character-set='UTF-8' header='yes' locale='en_US' separator=','>
+                  <column datatype='string' name='Country (region)' ordinal='0' />
+                  <column datatype='integer' name='Ladder' ordinal='1' />
+                  <column datatype='integer' name='SD of Ladder' ordinal='2' />
+                  <column datatype='integer' name='Positive affect' ordinal='3' />
+                  <column datatype='integer' name='Negative affect' ordinal='4' />
+                  <column datatype='integer' name='Social support' ordinal='5' />
+                  <column datatype='integer' name='Freedom' ordinal='6' />
+                  <column datatype='integer' name='Corruption' ordinal='7' />
+                  <column datatype='integer' name='Generosity' ordinal='8' />
+                  <column datatype='integer' name='Log of GDP_per capita' ordinal='9' />
+                  <column datatype='integer' name='Healthy life_expectancy' ordinal='10' />
+                </columns>
+              </relation>
+            </properties>
+          </object>
+        </objects>
+      </_.fcp.ObjectModelEncapsulateLegacy.true...object-graph>
+    </datasource>
+  </datasources>
+  <mapsources>
+    <mapsource name='Tableau' />
+  </mapsources>
+  <worksheets>
+    <worksheet name='Sheet 1'>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='world-happiness-report-2019' name='federated.0rncntt1fcs6fc10tm1vl01zija0' />
+          </datasources>
+          <mapsources>
+            <mapsource name='Tableau' />
+          </mapsources>
+          <datasource-dependencies datasource='federated.0rncntt1fcs6fc10tm1vl01zija0'>
+            <column datatype='string' name='[Country (region)]' role='dimension' semantic-role='[Country].[ISO3166_2]' type='nominal' />
+            <column datatype='integer' name='[Ladder]' role='measure' type='quantitative' />
+            <column-instance column='[Country (region)]' derivation='None' name='[none:Country (region):nk]' pivot='key' type='nominal' />
+            <column-instance column='[Ladder]' derivation='Sum' name='[sum:Ladder:ok]' pivot='key' type='ordinal' />
+          </datasource-dependencies>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='axis'>
+            <encoding attr='space' class='0' field='[federated.0rncntt1fcs6fc10tm1vl01zija0].[Longitude (generated)]' field-type='quantitative' max='18657613.725329071' min='-10032014.439544193' projection='EPSG:3857' range-type='fixed' scope='cols' type='space' />
+            <encoding attr='space' class='0' field='[federated.0rncntt1fcs6fc10tm1vl01zija0].[Latitude (generated)]' field-type='quantitative' max='13571460.3352415' min='-6549532.5232492154' projection='EPSG:3857' range-type='fixed' scope='rows' type='space' />
+          </style-rule>
+          <style-rule element='map'>
+            <format attr='washout' value='0.0' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <encodings>
+              <color column='[federated.0rncntt1fcs6fc10tm1vl01zija0].[sum:Ladder:ok]' />
+              <lod column='[federated.0rncntt1fcs6fc10tm1vl01zija0].[none:Country (region):nk]' />
+              <geometry column='[federated.0rncntt1fcs6fc10tm1vl01zija0].[Geometry (generated)]' />
+            </encodings>
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-color' value='#4e79a7' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows>[federated.0rncntt1fcs6fc10tm1vl01zija0].[Latitude (generated)]</rows>
+        <cols>[federated.0rncntt1fcs6fc10tm1vl01zija0].[Longitude (generated)]</cols>
+      </table>
+      <simple-id uuid='{3A744BC6-8525-42F5-96C2-4EE951DBDF25}' />
+    </worksheet>
+  </worksheets>
+  <windows source-height='30'>
+    <window class='worksheet' maximized='true' name='Sheet 1'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='160'>
+            <card pane-specification-id='0' param='[federated.0rncntt1fcs6fc10tm1vl01zija0].[sum:Ladder:ok]' type='color' />
+          </strip>
+        </edge>
+      </cards>
+      <simple-id uuid='{0BE4E73D-F37B-41EA-8A6F-617216A74360}' />
+    </window>
+  </windows>
+</workbook>
